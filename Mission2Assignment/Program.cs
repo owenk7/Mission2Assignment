@@ -10,7 +10,7 @@ namespace Mission2Assignment
             Console.WriteLine("How many dice rolls would you like to simulate? ");
             int numRolls = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("DICE ROLLING SIMULATION RESULTS \nEach \"*\" represents 1 % of the total number of rolls. \nTotal number of rolls = " + numRolls + ".");
+            Console.WriteLine("DICE ROLLING SIMULATION RESULTS \nEach \"*\" represents 1 % of the total number of rolls. \nTotal number of rolls = " + numRolls + ".\n");
 
             // random number generator
             Random r = new Random();
@@ -46,7 +46,7 @@ namespace Mission2Assignment
                 Console.WriteLine();
             }
 
-            Console.WriteLine("I hope you enjoyed counting all those little asterisks! Goodbye!!");
+            Console.WriteLine("\nI hope you enjoyed counting all those little asterisks as much as I did! Goodbye!!");
 
         }
     }
