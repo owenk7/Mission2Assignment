@@ -23,7 +23,7 @@ namespace Mission2Assignment
             // random number range
             rollcountArray[0] = r.Next(6);
 
-            // simulate the roll of the die
+            // simulate the roll of the die, dice1 and dice2
             for (int i = 0; i < numRolls; i++)
             {
                 int dice1 = r.Next(1,7);
@@ -32,12 +32,12 @@ namespace Mission2Assignment
                 int diceTotal = dice1 + dice2;
 
                 rollcountArray[diceTotal]++;
-
             }
 
             // print the results from the array
             for (int i = 2; i <= 12; i++)
             {
+                // show a * in place of 1% of the roll count
                 int calcPerc = (int)((double)rollcountArray[i] / numRolls * 100);
 
                 Console.Write(i + ": ");
@@ -46,7 +46,6 @@ namespace Mission2Assignment
                     Console.Write("*");
                 }
                 Console.WriteLine();
-                //Console.WriteLine((i + 1) + ": " + rollcountArray[i]);
             }
 
         }
