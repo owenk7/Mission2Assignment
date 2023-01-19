@@ -38,10 +38,10 @@ namespace Mission2Assignment
             // print the results from the array
             for (int i = 2; i <= 12; i++)
             {
-                int percentage = (int)((double)rollcountArray[i] / numRolls * 100);
+                int calcPerc = (int)((double)rollcountArray[i] / numRolls * 100);
 
                 Console.Write(i + ": ");
-                for (int x = 0; x < percentage; x++)
+                for (int x = 0; x < calcPerc; x++)
                 {
                     Console.Write("*");
                 }
